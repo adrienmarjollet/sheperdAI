@@ -1,0 +1,30 @@
+# Environment
+.env
+.env.local
+
+# Virtual environment
+.venv/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# AI agent working directories
+workspace/
+
+# Claude Code
+CLAUDE.md
+todo.md
+
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
