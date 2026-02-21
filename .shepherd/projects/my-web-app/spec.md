@@ -1,0 +1,26 @@
+# Project Spec: My Web App
+
+**Description**: A simple Flask hello-world API with a /health endpoint and a /greet/<name> endpoint
+**Working Directory**: ./workspace
+**Deadline**: 2026-02-15
+
+## Source
+Loaded from: project.yaml
+
+## Raw YAML
+```yaml
+name: "My Web App"
+description: "A simple Flask hello-world API with a /health endpoint and a /greet/<name> endpoint"
+working_directory: "./workspace"
+deadline: "2026-02-15"
+
+# Optional: pre-defined tasks. If omitted, the PM generates them.
+tasks:
+  - name: "Initialize Flask project"
+    description: "Create app.py with a Flask app and a /health endpoint returning {\"status\": \"ok\"}"
+    test_command: "cd workspace && python -c \"from app import app; print('ok')\""
+
+  - name: "Add greeting endpoint"
+    description: "Add GET /greet/<name> returning {\"message\": \"Hello, <name>!\"} and write tests in test_app.py"
+    test_command: "cd workspace && python -m pytest test_app.py -v"
+```
